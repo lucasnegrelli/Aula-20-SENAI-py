@@ -1,32 +1,44 @@
-# Aula-20-SENAI-py
-'Projeto Final'
-2. SITUAÇÃO PROBLEMA: FORMULÁRIO DE LEADS PARA UMA AGENCIA DE MARKETING DIGITAL
-
-# Gerenciamento de Leads
-https://prairie-heath-fb8.notion.site/AULA-20-Projeto-Final-160f92ea880b47d2aabb686793bea4b7
+# CRUD de Usuários
 
 ## Sobre o Projeto
-Este projeto é um sistema de gerenciamento de leads desenvolvido em Python utilizando a biblioteca Tkinter para a interface gráfica e SQLite para o banco de dados. O sistema permite a inserção, atualização, deleção e visualização de leads, além de incluir campos para nome, e-mail, telefone, interesse, status e follow-up dos leads.
+
+Este projeto é um sistema de CRUD (Create, Read, Update, Delete) desenvolvido em Python utilizando a biblioteca Tkinter para a interface gráfica e SQLite para o banco de dados. O sistema permite a inserção, atualização, deleção e visualização de usuários, incluindo campos para nome, e-mail e CPF.
 
 ## Funcionalidades
-- **Inserir Lead**: Permite adicionar novos leads ao sistema.
-- **Atualizar Lead**: Permite editar informações de leads existentes.
-- **Deletar Lead**: Permite remover leads do sistema.
-- **Visualizar Leads**: Exibe uma tabela com todos os leads cadastrados.
-- **Campo de Follow-up**: Inclui um campo de texto para adicionar informações de acompanhamento dos leads.
 
-## Interface do Usuário
-A interface do usuário é organizada da seguinte forma:
-- **Wireframe Superior**: Contém espaço para um logo, informações de controle e uma breve explicação do gerenciador.
-- **Campos de Entrada**: Inclui campos para nome, e-mail, telefone, interesse, status e follow-up. Campos obrigatórios são marcados com um asterisco (*).
-- **Botões de Ação**: Botões para salvar, atualizar e deletar leads, alinhados na lateral direita da interface.
-- **Tabela de Leads**: Mostra uma tabela com todos os leads cadastrados, incluindo todas as informações relevantes.
+- **Inserir Usuário**: Permite adicionar novos usuários ao sistema.
+- **Atualizar Usuário**: Permite editar informações de usuários existentes.
+- **Deletar Usuário**: Permite remover usuários do sistema.
+- **Visualizar Usuários**: Exibe uma tabela com todos os usuários cadastrados.
+
+## Requisitos Funcionais
+
+- **O que o sistema deve fazer**: 
+  - Permitir a inserção de novos usuários com nome, e-mail e CPF.
+  - Permitir a edição dos dados dos usuários.
+  - Permitir a exclusão de usuários.
+  - Exibir uma tabela com os usuários cadastrados.
+- **Fluxos de Trabalho**:
+  - O usuário insere as informações nos campos de texto e clica em "SALVAR" para adicionar um novo usuário.
+  - Para atualizar um usuário, o usuário seleciona o usuário na tabela, edita as informações nos campos de texto e clica em "ATUALIZAR".
+  - Para deletar um usuário, o usuário seleciona o usuário na tabela e clica em "DELETAR".
+  - A tabela exibe todos os usuários cadastrados no banco de dados.
+- **Entradas e Saídas**:
+  - Entradas: Nome, E-mail, CPF.
+  - Saídas: Tabela de usuários com ID, Nome e E-mail.
+
+## Tecnologias Utilizadas
+
+- **Python**: Linguagem de programação utilizada para desenvolver o sistema.
+- **Tkinter**: Biblioteca utilizada para criar a interface gráfica.
+- **SQLite**: Banco de dados utilizado para armazenar as informações dos usuários.
 
 ## Como Executar o Projeto
+
 1. **Clone o Repositório**:
     ```bash
-    git clone https://github.com/lucasnegrelli/lead-management.git
-    cd lead-management
+    git clone https://github.com/lucasnegrelli/crud-usuarios.git
+    cd crud-usuarios
     ```
 
 2. **Instale as Dependências**:
@@ -38,8 +50,9 @@ A interface do usuário é organizada da seguinte forma:
     ```
 
 ## Estrutura do Projeto
+
 ```
-lead-management/
+crud-usuarios/
 ├── lead_management.py
 └── README.md
 ```
@@ -48,6 +61,7 @@ lead-management/
 - **README.md**: Este arquivo, que contém informações sobre o projeto.
 
 ## Contribuição
+
 Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou enviar pull requests no repositório.
 
 1. Fork o projeto.
@@ -55,6 +69,3 @@ Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou enviar
 3. Faça suas alterações e commit: `git commit -m 'Minha nova feature'`.
 4. Envie para a branch: `git push origin minha-feature`.
 5. Abra um Pull Request.
-
-## Licença
-Este projeto está licenciado sob a Licença MIT. Consulte o arquivo [LICENSE](LICENSE) para obter mais informações.
